@@ -1,0 +1,14 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7",
+  "package": "org.polyfrost.ares.mixin",
+  "refmap": "mixins.ares.refmap.json",
+  "injectors": {
+    "maxShiftBy": 5
+  },
+  "mixins": [
+    "SoundMixin"
+  ],
+  "client": [],
+  "verbose": true
+}

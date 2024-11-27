@@ -1,4 +1,4 @@
-# OneConfigExampleMod
+# OneConfigAresMod
 
 ![Powered by OneConfig](https://polyfrost.org/media/branding/badges/badge_1.svg)
 ![Compact Powered by OneConfig](https://polyfrost.org/media/branding/badges/badge_2.svg)
