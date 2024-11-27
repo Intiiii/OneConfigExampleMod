@@ -1,6 +1,6 @@
-package org.polyfrost.ares.config;
+package org.inti.ares.config;
 
-import org.polyfrost.ares.AresMod;
+import org.inti.ares.AresMod;
 import cc.polyfrost.oneconfig.config.Config;
 import cc.polyfrost.oneconfig.config.annotations.Slider;
 import cc.polyfrost.oneconfig.config.data.Mod;
@@ -27,7 +27,7 @@ public class TestConfig extends Config {
     public static float otherFootstepsVolume = 100f;
 
     public TestConfig() {
-        super(new Mod(AresMod.NAME, ModType.UTIL_QOL), AresMod.MODID + ".json");
+        super(new Mod(AresMod.MOD_ID, ModType.UTIL_QOL), AresMod.MOD_ID + ".json");
         initialize();
     }
 }
