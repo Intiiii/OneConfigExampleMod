@@ -21,7 +21,6 @@ public class SoundMixin {
         if (sound == null) return sound;
         
         String soundName = sound.getSoundLocation().getResourcePath().toLowerCase();
-        System.out.println("[Ares] Sound playing: " + soundName);
         
         // Check of het een voetstap geluid is
         if (soundName.contains("step") || soundName.contains("dig")) {
@@ -43,8 +42,6 @@ public class SoundMixin {
             
             // Als we een entity hebben gevonden
             if (closestEntity != null) {
-                System.out.println("[Ares] Found entity: " + closestEntity.getClass().getName());
-                
                 // Check of het de speler zelf is
                 if (closestEntity == Minecraft.getMinecraft().thePlayer) {
                     return new ModifiedSound(sound, AresMod.config.ownFootstepsVolume / 100f);
