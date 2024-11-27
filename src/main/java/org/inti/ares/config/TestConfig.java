@@ -3,6 +3,7 @@ package org.inti.ares.config;
 import org.inti.ares.AresMod;
 import cc.polyfrost.oneconfig.config.Config;
 import cc.polyfrost.oneconfig.config.annotations.Slider;
+import cc.polyfrost.oneconfig.config.annotations.Switch;
 import cc.polyfrost.oneconfig.config.data.Mod;
 import cc.polyfrost.oneconfig.config.data.ModType;
 
@@ -25,6 +26,20 @@ public class TestConfig extends Config {
             description = "Adjust the volume of other players' footsteps"
     )
     public static float otherFootstepsVolume = 100f;
+
+    @Switch(
+        name = "See Invisible Players",
+        description = "Allows you to see players that are invisible"
+    )
+    public boolean seeInvisiblePlayers = false;
+
+    @Slider(
+        name = "Invisible Player Opacity", 
+        description = "Opacity of invisible players when revealed",
+        min = 0, 
+        max = 100
+    )
+    public float invisiblePlayerOpacity = 50;
 
     public TestConfig() {
         super(new Mod(AresMod.MOD_ID, ModType.UTIL_QOL), AresMod.MOD_ID + ".json");
